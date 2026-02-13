@@ -13,13 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/airportdistance';
  */
 async function callAirportDistanceAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            iata1: &#x27;JFK&#x27;,
-            iata2: &#x27;LAX&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
