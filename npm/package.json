@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/airportdistance",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Airport Distance is a simple tool for getting the distance between two airports. It returns the distance between the two airports.",
   "main": "index.js",
   "types": "index.d.ts",
