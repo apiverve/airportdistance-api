@@ -17,11 +17,14 @@ def call_airportdistance_api():
     Make a GET request to the Airport Distance API
     """
     try:
+        # Query parameters
+        params &#x3D; {&#x27;iata1&#x27;: &#x27;JFK&#x27;, &#x27;iata2&#x27;: &#x27;LAX&#x27;}
+
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.get(API_URL, headers=headers, params=params)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
