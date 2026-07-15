@@ -127,6 +127,13 @@ async function makeRequest() {
   "data": {
     "distanceMiles": 2470.23,
     "distanceKm": 3974.2,
+    "distanceNauticalMiles": 2145.12,
+    "estimatedFlightTime": "5h 24m",
+    "timezoneDiffHours": -3,
+    "bearing": 265,
+    "direction": "West",
+    "isInternational": false,
+    "carbonEstimateKg": 543,
     "airport1": {
       "name": "John F Kennedy International Airport",
       "iata": "JFK",
@@ -136,7 +143,8 @@ async function makeRequest() {
       "country": "US",
       "elevation": 13,
       "latitude": 40.63980103,
-      "longitude": -73.77890015
+      "longitude": -73.77890015,
+      "timezone": "America/New_York"
     },
     "airport2": {
       "name": "Los Angeles International Airport",
@@ -147,7 +155,8 @@ async function makeRequest() {
       "country": "US",
       "elevation": 125,
       "latitude": 33.94250107,
-      "longitude": -118.4079971
+      "longitude": -118.4079971,
+      "timezone": "America/Los_Angeles"
     }
   }
 }
