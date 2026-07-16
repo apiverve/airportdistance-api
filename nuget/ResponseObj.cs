@@ -25,15 +25,39 @@ namespace APIVerve.API.AirportDistance
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("distanceMiles")]
-        public double DistanceMiles { get; set; }
+        public double? DistanceMiles { get; set; }
 
         [JsonProperty("distanceKm")]
-        public double DistanceKm { get; set; }
+        public double? DistanceKm { get; set; }
+
+        [JsonProperty("distanceNauticalMiles")]
+        public double? DistanceNauticalMiles { get; set; }
+
+        [JsonProperty("estimatedFlightTime")]
+        public string EstimatedFlightTime { get; set; }
+
+        [JsonProperty("timezoneDiffHours")]
+        public long? TimezoneDiffHours { get; set; }
+
+        [JsonProperty("bearing")]
+        public long? Bearing { get; set; }
+
+        [JsonProperty("direction")]
+        public string Direction { get; set; }
+
+        [JsonProperty("isInternational")]
+        public bool? IsInternational { get; set; }
+
+        [JsonProperty("carbonEstimateKg")]
+        public long? CarbonEstimateKg { get; set; }
 
         [JsonProperty("airport1")]
         public Airport Airport1 { get; set; }
@@ -63,12 +87,27 @@ namespace APIVerve.API.AirportDistance
         public string Country { get; set; }
 
         [JsonProperty("elevation")]
-        public long Elevation { get; set; }
+        public long? Elevation { get; set; }
 
         [JsonProperty("latitude")]
-        public double Latitude { get; set; }
+        public double? Latitude { get; set; }
 
         [JsonProperty("longitude")]
-        public double Longitude { get; set; }
+        public double? Longitude { get; set; }
+
+        [JsonProperty("timezone")]
+        public string Timezone { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
