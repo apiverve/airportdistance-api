@@ -192,11 +192,60 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Airport Distance API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "distanceMiles": 2470.23,
+    "distanceKm": 3974.2,
+    "distanceNauticalMiles": 2145.12,
+    "estimatedFlightTime": "5h 24m",
+    "timezoneDiffHours": -3,
+    "bearing": 265,
+    "direction": "West",
+    "isInternational": false,
+    "carbonEstimateKg": 543,
+    "airport1": {
+      "name": "John F Kennedy International Airport",
+      "iata": "JFK",
+      "icao": "KJFK",
+      "city": "New York",
+      "state": "New-York",
+      "country": "US",
+      "elevation": 13,
+      "latitude": 40.63980103,
+      "longitude": -73.77890015,
+      "timezone": "America/New_York"
+    },
+    "airport2": {
+      "name": "Los Angeles International Airport",
+      "iata": "LAX",
+      "icao": "KLAX",
+      "city": "Los Angeles",
+      "state": "California",
+      "country": "US",
+      "elevation": 125,
+      "latitude": 33.94250107,
+      "longitude": -118.4079971,
+      "timezone": "America/Los_Angeles"
+    }
+  }
 }
 ```
 
