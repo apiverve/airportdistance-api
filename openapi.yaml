@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Airport Distance
   description: >-
-    Airport Distance is a simple tool for getting the distance between two
-    airports. It returns the distance between the two airports.
+    Airport Distance calculates the great-circle distance between two airports,
+    plus estimated travel time, using their 3-letter IATA codes. It provides
+    route distance in miles and kilometers plus estimated flight duration.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/airportdistance:
     get:
-      summary: Get Airport Distance from IATA
+      summary: Airport Distance
       description: >-
         Airport Distance is a simple tool for getting the distance between two
         airports. It returns the distance between the two airports.
