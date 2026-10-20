@@ -1,13 +1,12 @@
 Airport Distance API
 ============
 
-Airport Distance is a simple tool for getting the distance between two airports. It returns the distance between the two airports.
+Airport Distance calculates the great-circle distance between two airports, plus estimated travel time, using their 3-letter IATA codes. It provides route distance in miles and kilometers plus estimated flight duration.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Airport Distance API](https://airportdistance.apiverve.com?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-airportdistance.svg)](https://pypi.org/project/apiverve-airportdistance/)
+
+This is a Python wrapper for the [Airport Distance API](https://apiverve.com/marketplace/airportdistance?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-airportdistance
 
 ## Configuration
 
-Before using the airportdistance API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Airport Distance API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -63,7 +62,7 @@ except Exception as e:
 
 ## Usage
 
-The Airport Distance API documentation is found here: [https://docs.apiverve.com/ref/airportdistance](https://docs.apiverve.com/ref/airportdistance?utm_source=pypi&utm_medium=readme).
+The Airport Distance API documentation is found here: [https://docs.apiverve.com/ref/airportdistance](https://docs.apiverve.com/ref/airportdistance?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -110,6 +109,13 @@ print(result)
   "data": {
     "distanceMiles": 2470.23,
     "distanceKm": 3974.2,
+    "distanceNauticalMiles": 2145.12,
+    "estimatedFlightTime": "5h 24m",
+    "timezoneDiffHours": -3,
+    "bearing": 265,
+    "direction": "West",
+    "isInternational": false,
+    "carbonEstimateKg": 543,
     "airport1": {
       "name": "John F Kennedy International Airport",
       "iata": "JFK",
@@ -119,7 +125,8 @@ print(result)
       "country": "US",
       "elevation": 13,
       "latitude": 40.63980103,
-      "longitude": -73.77890015
+      "longitude": -73.77890015,
+      "timezone": "America/New_York"
     },
     "airport2": {
       "name": "Los Angeles International Airport",
@@ -130,7 +137,8 @@ print(result)
       "country": "US",
       "elevation": 125,
       "latitude": 33.94250107,
-      "longitude": -118.4079971
+      "longitude": -118.4079971,
+      "timezone": "America/Los_Angeles"
     }
   }
 }
@@ -274,7 +282,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -285,12 +293,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
