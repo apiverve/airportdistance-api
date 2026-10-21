@@ -1,6 +1,6 @@
 # Airport Distance API - PHP Package
 
-Airport Distance is a simple tool for getting the distance between two airports. It returns the distance between the two airports.
+Airport Distance calculates the great-circle distance between two airports, plus estimated travel time, using their 3-letter IATA codes. It provides route distance in miles and kilometers plus estimated flight duration.
 
 ## Installation
 
@@ -116,11 +116,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/airportdistance?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/airportdistance?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://airportdistance.apiverve.com?utm_source=php&utm_medium=readme](https://airportdistance.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/airportdistance?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/airportdistance?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
