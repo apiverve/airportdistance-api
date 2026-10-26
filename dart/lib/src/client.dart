@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Airport Distance API client.
 ///
-/// For more information, visit: https://airportdistance.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/airportdistance?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [iata1] (required) - The IATA code of the first airport (e.g. JFK)
