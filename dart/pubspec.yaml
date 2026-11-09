@@ -1,6 +1,6 @@
 name: apiverve_airportdistance
 description: "Airport Distance calculates the great-circle distance between two airports, plus estimated travel time, using their 3-letter IATA codes. It provides route distance in miles and kilometers plus estimated flight duration."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/airportdistance?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/airportdistance-api/tree/main/dart
 
